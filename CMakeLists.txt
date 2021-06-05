@@ -10,3 +10,5 @@ set(MYDLL_SOURCES
 add_library(mydll SHARED ${MYDLL_SOURCES})
 
 set_target_properties(mydll PROPERTIES PREFIX "")
+
+add_subdirectory(Test)
