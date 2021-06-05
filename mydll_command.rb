@@ -14,7 +14,7 @@ module MyDLL
     f.call(_vptr_)
   end
 
-  MyDLL_FUNCTIONS_ARGS_MAP[:PrintVec2] = [Fiddle::TYPE_VOIDP]
+  MyDLL_FUNCTIONS_ARGS_MAP[:PrintVec2] = [Fiddle::TYPE_VOIDP] # still no way to specify Vec2
   MyDLL_FUNCTIONS_RETVAL_MAP[:PrintVec2] = Fiddle::TYPE_VOID
   def PrintVec2(_v_)
     f = MyDLL::get_command(:PrintVec2)
